@@ -1,0 +1,8 @@
+- hosts: localhost local element env
+  become: true
+  become_user: root
+
+  tasks:
+    - include: tasks/update.yml
+    - include: tasks/upgrade.yml
+    - include: tasks/cleanup.yml

@@ -1,0 +1,27 @@
+- hosts: localhost local element env gthinkpad
+#  become: true
+  become: yes
+  become_method: su
+  remote_user: root
+  become_user: root
+
+
+  tasks:
+#    - include: tasks/update.yml
+#    - include: tasks/upgrade.yml
+#    - include: tasks/repo/chrome.yml
+#    - include: tasks/repo/typora.yml
+#    - include: tasks/repo/all-combined.yml
+    - include: tasks/update.yml
+    - include: tasks/apt-install.yml
+#    - include: tasks/pip.yml
+#    - include: tasks/snap/google-play.yml
+#    - include: tasks/spideroak.yml
+#    - include: tasks/repo/sublimetext.yml
+#    - include: tasks/tlp.yml
+    - include: tasks/upgrade.yml
+    - include: tasks/cleanup.yml
+    - include: tasks/ssh-permissions.yml
+#    - include: tasks/bash.yml
+#    - include: tasks/vim-runtime.yml
+#    - include: tasks/vim.yml
