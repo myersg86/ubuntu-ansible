@@ -7,4 +7,3 @@
   unarchive:
     src: ~/master.zip
     dest: ~/.vim_runtime
-    

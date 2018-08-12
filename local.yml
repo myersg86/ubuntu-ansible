@@ -5,23 +5,21 @@
   remote_user: root
   become_user: root
 
-
   tasks:
-#    - include: tasks/update.yml
-#    - include: tasks/upgrade.yml
-#    - include: tasks/repo/chrome.yml
-#    - include: tasks/repo/typora.yml
-#    - include: tasks/repo/all-combined.yml
-    - include: tasks/update.yml
-    - include: tasks/apt-install.yml
-#    - include: tasks/pip.yml
-#    - include: tasks/snap/google-play.yml
-#    - include: tasks/spideroak.yml
-#    - include: tasks/repo/sublimetext.yml
-#    - include: tasks/tlp.yml
-    - include: tasks/upgrade.yml
-    - include: tasks/cleanup.yml
-    - include: tasks/ssh-permissions.yml
-#    - include: tasks/bash.yml
-#    - include: tasks/vim-runtime.yml
-#    - include: tasks/vim.yml
+    - include: roles/common/tasks/update.yml
+    - include: roles/common/tasks/upgrade.yml
+#    - include: roles/common/tasks/repo/chrome.yml
+#    - include: roles/common/tasks/repo/typora.yml
+#    - include: roles/common/tasks/repo/all-combined.yml
+    - include: roles/common/tasks/apt-install.yml
+#    - include: roles/common/tasks/pip.yml
+#    - include: roles/common/tasks/snap/google-play.yml
+#    - include: roles/common/tasks/spideroak.yml
+    - include: roles/common/tasks/repo/sublimetext.yml
+#    - include: roles/common/tasks/tlp.yml
+    - include: roles/common/tasks/upgrade.yml
+    - include: roles/common/tasks/cleanup.yml
+    - include: roles/common/tasks/ssh-permissions.yml
+    - include: roles/common/tasks/bash.yml
+    - include: roles/common/tasks/vim-runtime.yml
+    - include: roles/common/tasks/vim.yml
