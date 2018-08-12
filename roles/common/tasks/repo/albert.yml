@@ -1,0 +1,5 @@
+# Add albert stable repository from PPA and install its signing key.
+# On Ubuntu target:
+- apt_repository:
+    repo: ppa:flexiondotorg/albert
+    state: present

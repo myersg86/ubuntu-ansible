@@ -1,0 +1,15 @@
+- name: Add Typora apt key by id from a keyserver
+  apt_key:
+    keyserver: keyserver.ubuntu.com
+    id: BA300B7755AFCFAE
+
+- name: Add Typora repository
+  apt_repository:
+    repo: 'deb https://typora.io/linux ./'
+    state: present
+
+- name: Install Typora
+  apt:
+    pkg: typora
+    state: latest
+    update_cache: yes

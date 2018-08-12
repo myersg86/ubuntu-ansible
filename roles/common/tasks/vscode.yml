@@ -1,0 +1,3 @@
+- name: Install a latest vscode .deb package from the internet.
+  apt:
+    deb: "https://go.microsoft.com/fwlink/?LinkID=760868"

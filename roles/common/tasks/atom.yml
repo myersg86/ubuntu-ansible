@@ -1,0 +1,3 @@
+- name: Install a latest vscode .deb package from the internet.
+  apt:
+    deb: "https://atom-installer.github.com/v1.28.2/atom-amd64.deb?s=1531516995&ext=.deb"

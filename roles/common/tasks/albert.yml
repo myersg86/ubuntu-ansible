@@ -1,0 +1,34 @@
+# For rpm based package managers do:
+
+# sudo rpm --import \
+#   https://build.opensuse.org/projects/home:manuelschneid3r/public_key
+# while for deb based package managers you have to:
+
+# wget -nv -O Release.key \
+#   https://build.opensuse.org/projects/home:manuelschneid3r/public_key
+# apt-key add - < Release.key
+# apt-get update
+
+# wget -nv https://download.opensuse.org/repositories/home:manuelschneid3r/xUbuntu_16.04/Release.key -O Release.key
+# sudo apt-key add - < Release.key
+# sudo apt-get update
+
+# https://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_16.04/amd64/albert_0.14.21_amd64.deb
+# https://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_18.04/amd64/albert_0.14.21_amd64.deb
+
+# For xUbuntu 18.04 run the following:
+# sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_18.04/ /' > /etc/apt/sources.list.d/home:manuelschneid3r.list"
+# sudo apt-get update
+# sudo apt-get install albert
+# You can add the repository key to apt. Keep in mind that the owner of the key may distribute updates, packages and repositories that your system will trust (more information). To add the key, run:
+# wget -nv https://download.opensuse.org/repositories/home:manuelschneid3r/xUbuntu_18.04/Release.key -O Release.key
+# sudo apt-key add - < Release.key
+# sudo apt-get update
+
+# You can add the repository key to apt. Keep in mind that the owner of the key may distribute updates, packages and repositories that your system will trust (more information). To add the key, run:
+# wget -nv https://download.opensuse.org/repositories/home:manuelschneid3r/xUbuntu_16.10/Release.key -O Release.key
+# sudo apt-key add - < Release.key
+# sudo apt-get update
+# For xUbuntu 16.04 run the following:
+# sudo sh -c "echo 'deb http://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_16.04/ /' > /etc/apt/sources.list.d/home:manuelschneid3r.list"
+# sudo apt-get update

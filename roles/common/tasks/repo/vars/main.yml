@@ -1,0 +1,44 @@
+# snap_list:
+#   - slack
+#   - node
+#   - tusk
+#   - google-play-music-desktop-player
+
+repo_list:
+  - deb [arch=amd64] http://packages.microsoft.com/repos/vscode stable main
+  - ppa:alexlarsson/flatpak
+  - ppa:cybre/elementaryplus
+  - ppa:ultradvorka/ppa
+  - ppa:nixnote/nixnote2-daily
+  - ppa:flexiondotorg/albert
+  - ppa:philip.scott/elementary-tweaks
+  - ppa:linrunner/tlp
+  - ppa:openjdk-r/ppa
+
+install_list:
+  - transmission
+  - vim
+  - vlc
+  - snapd
+  - git
+  - shellcheck
+
+deps_list:
+  - cmake
+  - build-essential
+  - dkms
+  - libgcrypt11-dev
+  - libyajl-dev
+  - libboost-all-dev
+  - libcurl4-openssl-dev
+  - binutils-dev
+  - pkg-config
+  - apt-transport-https
+  - ca-certificates
+  - software-properties-common
+  - curl
+
+python_packages:
+  - PyYAML
+  - jinja2
+  - cryptography

@@ -1,0 +1,2 @@
+# - name: Install a latest rambox .deb package from the internet.
+#   apt: "https://getrambox.herokuapp.com/download/linux_64?filetype=deb"

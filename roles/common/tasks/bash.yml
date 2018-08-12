@@ -1,0 +1,12 @@
+- name: stat .bashrc
+  stat: path="~/.bashrc"
+  register: bashrc_stat
+
+- name: Move .bashrc to bar
+  command: mv "~/.bashrc" "~/bashrc.backup"
+  when: bashrc_stat.stat.exists
+
+- name: download "~/.bashrc"
+  get_url:
+    url: https://raw.githubusercontent.com/myersg86/dotfiles/master/.bashrc
+    dest: ~/.

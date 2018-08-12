@@ -1,0 +1,4 @@
+- apt_repository:
+    repo: ppa:philip.scott/elementary-tweaks
+    state: present
+    update_cache: yes

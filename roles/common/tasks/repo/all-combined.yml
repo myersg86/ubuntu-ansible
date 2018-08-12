@@ -1,0 +1,14 @@
+- name: add all repositories
+  tags: repo
+  apt_repository:
+   repo: "{{ item }}"
+   state: present
+  loop:
+    - ppa:alexlarsson/flatpak
+    - ppa:philip.scott/elementary-tweaks
+    - ppa:linrunner/tlp
+    - ppa:openjdk-r/ppa
+    - ppa:ultradvorka/ppa
+    # - ppa:cybre/elementaryplus
+    # - ppa:nixnote/nixnote2-daily
+    # - ppa:flexiondotorg/albert

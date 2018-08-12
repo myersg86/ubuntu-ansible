@@ -1,0 +1,10 @@
+- name: Download file with custom HTTP headers
+  get_url:
+    url: https://github.com/amix/vimrc/archive/master.zip
+    dest: "~/."
+
+- name: Unarchive a file that is already on the remote machine
+  unarchive:
+    src: ~/master.zip
+    dest: ~/.vim_runtime
+    

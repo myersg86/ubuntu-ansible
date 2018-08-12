@@ -1,0 +1,3 @@
+- name: Install nomachine .deb package from the internet.
+  apt:
+    deb: "http://download.nomachine.com/download/6.2/Linux/nomachine_6.2.4_1_amd64.deb"

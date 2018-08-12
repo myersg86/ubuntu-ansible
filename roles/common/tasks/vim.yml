@@ -1,0 +1,7 @@
+- name: Move vimrc to vimrc.backup
+  command: mv "~/.vimrc" "~/vimrc.backup"
+
+- name: download vimrc
+  get_url:
+    url:  "https://raw.githubusercontent.com/myersg86/dotfiles/master/.vimrc"
+    dest: "~/."

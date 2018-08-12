@@ -1,0 +1,6 @@
+# Add albert stable repository from PPA and install its signing key.
+# On Ubuntu target:
+- name: Install packages (apt)
+  apt_repository:
+    repo: ppa:cybre/elementaryplus
+    state: present

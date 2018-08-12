@@ -1,0 +1,12 @@
+- name: config .ssh folder permissions
+  file:
+    state: directory
+    path: ~/.ssh
+    mode: 0700
+
+- name: config ssh keys permissions
+  file:
+    path: "{{ item }}"
+    mode: 0644
+  with_fileglob:
+    - "~/.ssh/*.pub"

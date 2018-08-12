@@ -1,0 +1,3 @@
+- apt_repository:
+    repo: ppa:nixnote/nixnote2-daily
+    state: present

@@ -1,0 +1,17 @@
+$ echo "deb http://repo.sinew.in/ stable main" > \
+  /etc/apt/sources.list.d/enpass.list
+And import key that is used to sign the release:
+
+$ wget -O - https://dl.sinew.in/keys/enpass-linux.key | apt-key add -
+After that you can install Enpass as any other software package:
+
+$ apt-get update
+$ apt-get install enpass
+$ exit
+
+On Ubuntu:
+$ sudo apt-get install libxss1 lsof
+On Fedora and Cent OS:
+# yum install libXScrnSaver lsof
+On OpenSUSE:
+# zypper install libXScrnSaver lsof

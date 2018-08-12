@@ -1,0 +1,48 @@
+# First, add our public GPG key to allow apt to authenticate the Insync repository:
+
+# $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ACCAF35C
+# If the previous command did not work, use this instead:
+
+# $ sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys ACCAF35C
+
+# Create a file /etc/apt/sources.list.d/insync.list with the following content
+
+# deb http://apt.insynchq.com/[DISTRIBUTION] [CODENAME] non-free contrib
+# Replace [DISTRIBUTION] with your Linux distro: ubuntu, debian, mint
+# Replace [CODENAME] with your Linux distro codename. Here is a list of codenames for ubuntu, debian, and mint For example Ubuntu 12.04 is precise
+
+# Here is an example for Ubuntu 17.10:
+# deb http://apt.insynchq.com/ubuntu artful non-free contrib
+# (Source packages are not available, only binaries.)
+
+# Update the apt repository:
+
+# $ sudo apt-get update
+
+# Install Insync
+
+# $ sudo apt-get install insync
+
+# File manager integration will be added when Insync is run.
+
+# The APT repository officially supports Debian, Mint, and Ubuntu only.
+# For other Debian-based distributions, try using the one for Debian Squeeze.
+
+
+# First, import the public GPG key used to sign the RPMs.
+
+# $ sudo rpm --import https://d2t3ff60b2tol4.cloudfront.net/repomd.xml.key
+
+# Create a new file insync.repo in /etc/yum.repos.d/ with the following content. Replace [DISTRIBUTION] with fedora or centos. (NOTE: Our YUM repo only supports CentOS / RHEL 7.)
+
+# [insync]
+# name=insync repo
+# baseurl=http://yum.insynchq.com/[DISTRIBUTION]/$releasever/
+# gpgcheck=1
+# gpgkey=https://d2t3ff60b2tol4.cloudfront.net/repomd.xml.key
+# enabled=1
+# metadata_expire=120m
+
+# Install Insync
+
+# $ sudo yum install insync

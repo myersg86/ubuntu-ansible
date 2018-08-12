@@ -1,0 +1,5 @@
+---
+
+- name: Install tusk
+  command: sudo snap install tusk --classic
+

@@ -1,0 +1,3 @@
+- apt_repository:
+    repo: ppa:cybre/elementaryplus
+    state: present

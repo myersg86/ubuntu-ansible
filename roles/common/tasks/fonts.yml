@@ -1,0 +1,6 @@
+# sudo wget https://github.com/google/fonts/archive/master.zip
+# unzip master.zip
+# sudo cp -rvf fonts-master /usr/share/fonts
+# fc-cache -fv
+# http://sharadchhetri.com/2016/07/23/install-google-fonts-on-ubuntu-system/
+# http://sharadchhetri.com/2014/01/01/how-to-addinstall-ubuntu-fonts-in-centosred-hat-linux/

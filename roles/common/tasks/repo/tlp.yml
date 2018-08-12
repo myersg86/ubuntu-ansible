@@ -1,0 +1,4 @@
+- apt_repository:
+    repo: ppa:linrunner/tlp
+    state: present
+    update_cache: yes
